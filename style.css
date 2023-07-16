@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(purple, white);
+    height: 100vh;
+
+}
+
+.container {
+    background-color: rgb(74, 21, 72);
+
+    color: white;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 25px;
+
+    & h1 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    & form {
+        margin-bottom: 20px;
+
+        & .formGroup {
+            margin-bottom: 10px;
+
+
+            & input {
+                width: 100%;
+                padding: 10px;
+                border-radius: 15px;
+                background: transparent;
+                outline: none;
+                border: rgb(50, 10, 48) solid 3px;
+                color: rgb(255, 255, 255);
+
+                &::placeholder {
+                    color: rgb(145, 145, 145);
+                }
+
+
+            }
+
+
+        }
+
+        & button {
+            display: block;
+            padding: 7px 20px;
+            margin: auto;
+            background: linear-gradient(270deg, rgb(104, 1, 104), rgb(231, 78, 220));
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: rgb(201, 201, 201);
+            border: none;
+            transition: ease.5s;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: ease.5s;
+            }
+
+        }
+    }
+
+    & .studentState {
+        display: flex;
+        justify-content: space-between;
+        border-top: 3px rgb(255, 255, 255) solid;
+        align-items: center;
+        padding-top: 20px;
+        margin-bottom: 10px;
+
+        & div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            & i {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: red;
+                margin-left: 15px;
+
+                &:nth-child(1) {
+                    background-color: rgb(17, 228, 17);
+                }
+
+                &:nth-child(3) {
+                    background-color: rgb(245, 144, 3);
+                }
+
+                &:nth-child(5) {
+                    background-color: blue;
+                }
+
+                &:nth-child(7) {
+                    background-color: rgb(255, 0, 221);
+                }
+            }
+        }
+
+    }
+
+    & #studentList {
+        border-radius: 10px;
+        padding: 10px;
+        height: 280px;
+        border: rgb(50, 10, 48) solid 3px;
+        overflow-y: scroll;
+
+        & .empty {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        & .studentItem {
+            border: rgb(50, 10, 48) solid 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            border-radius: 15px;
+            display: flex;
+
+            & .studentItemInfo {
+                display: flex;
+                flex-direction: column;
+                width: 75%;
+                align-items: start;
+            }
+
+            & .studentItemProcess {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                width: 25%;
+
+                & .deleteButton {
+                    background-color: rgb(255, 255, 255);
+                    padding: 5px;
+                    color: red;
+                    font-size: 25px;
+                    border-radius: 50%;
+                    transition: ease .3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        transition: ease .5s;
+                    }
+                }
+
+                & .editButton {
+                    background-color: rgb(224, 224, 0);
+                    color: black;
+                    padding: 5px;
+                    font-size: 25px;
+                    border-radius: 50%;
+                    transition: ease .3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        transition: ease .5s;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+}

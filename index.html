@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Not Hesaplama</h1>
+        <form action="" id="studentForm">
+            <div class="formGroup">
+                <input type="text" id="name" placeholder="Ad" required>
+            </div>
+            <div class="formGroup">
+                <input type="text" id="surname" placeholder="Soyad" required>
+            </div>
+            <div class="formGroup">
+                <input type="number" id="stuNumber" placeholder="Öğrenci Numarası" required>
+            </div>
+            <div class="formGroup">
+                <input type="number" id="vize" placeholder="Vize" required>
+            </div>
+            <div class="formGroup">
+                <input type="number" id="final" placeholder="Final" required>
+            </div>
+
+
+            <button type="submit" class="addButton">Ekle</button>
+        </form>
+        <div class="studentState">
+            <h3>Öğrenci Listesi</h3>
+            <div>
+                <i></i>
+                <span>AA</span>
+                <i></i>
+                <span>BB</span>
+                <i></i>
+                <span>CC</span>
+                <i></i>
+                <span>FF</span>
+
+            </div>
+        </div>
+        <div id="studentList">
+            <!-- <p class="empty">Listede öğrenci bulunmamaktadır.</p> -->
+        
+        <!-- <div class="studentItem">
+            <div class="studentItemInfo">
+                <h3>Ad Soyad - Öğrenci No</h3>
+                <span>Vize: puan Final: Puan</span>
+                <p>Ortalama: ortalama Puan</p>
+
+            </div>
+            <div class="studentItemProcess">
+                <i class="fa-solid fa-pen-to-square editButton"></i>
+                <i class="fa-solid fa-trash deleteButton"></i>
+            </div>
+        </div> -->
+
+        
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
